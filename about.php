@@ -1,4 +1,9 @@
 <?php
+
+define('LOCKER', true);
+
+require_once 'functions.php';
+
 $title = 'My Blog :: About';
 
 $post = '<p class="">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint optio, voluptatum
@@ -41,4 +46,4 @@ $recent_posts = [
         'slug' => lcfirst(str_replace(' ', '-', 'A fifth link item'))
     ]
 ];
-require_once 'about.tpl.php';
+require_once 'app/views/about.tpl.php';

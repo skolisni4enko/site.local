@@ -1,4 +1,9 @@
 <?php
+
+define('LOCKER', true);
+
+require_once 'functions.php';
+
 $title = 'My Blog :: Home';
 
 $posts = [
@@ -56,4 +61,4 @@ $recent_posts = [
         'slug' => lcfirst(str_replace(' ', '-', 'A fifth link item'))
     ]
 ];
-require_once 'index.tpl.php';
+require_once 'app/views/index.tpl.php';
